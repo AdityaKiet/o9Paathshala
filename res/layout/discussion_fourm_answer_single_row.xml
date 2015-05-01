@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:background="#C7E8F1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person" />
+
+        <TextView
+            android:id="@+id/txtAnswerContentExploreQuestionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="TextView"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:text="Replied By : "
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtExploreQuestionAnswerUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:text="Aditya"
+            android:textColor="#2E8B57"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txtExploreQuestionAnswerTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#2E8B57"
+            android:textSize="14sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnLikeAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginLeft="5dp"
+            android:background="#6495ED"
+            android:text="Like"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

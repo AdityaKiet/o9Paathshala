@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtAnswerStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="  m,b"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtResultQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/chkResult6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/apptheme_btn_check_holo_light"
+        android:clickable="false"
+        android:text="CheckBox"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtResultRightAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+</LinearLayout>

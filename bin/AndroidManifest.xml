@@ -1,0 +1,253 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.o9"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <receiver android:name="com.o9pathshala.notifications.NotificationBuilderAlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.o9pathshala.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            
+            android:name="com.o9pathshala.splash.LoginTypeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.splash.LoginTypeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.student.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.student.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/logo"
+            android:name="com.o9pathshala.student.slidingmenu.fragments.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.student.slidingmenu.fragments.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.student.test.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.student.test.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.test.slidingmenu.fragments.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.test.slidingmenu.fragments.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.settings.profile.ProfilePicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:parentActivityName="com.o9pathshala.settings.profile.UpdateAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.o9pathshala.settings.profile.UpdateAccountActivity" />
+
+            <intent-filter>
+                <action android:name="com.o9pathshala.settings.profile.ProfilePicActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.settings.profile.UpdateAccountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:parentActivityName="com.o9pathshala.student.slidingmenu.fragments.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.o9pathshala.student.slidingmenu.fragments.MainActivity" />
+
+            <intent-filter>
+                <action android:name="com.o9pathshala.settings.profile.UpdateAccountActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.test.result.tabs.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.test.result.tabs.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.register.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.register.RegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.discussionfourm.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.discussionfourm.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.discussionfourm.postquestion.PostQuestionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.discussionfourm.postquestion.PostQuestionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.discussionfourm.tabs.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.discussionfourm.tabs.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.discussionfourm.explorequestion.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.discussionfourm.explorequestion.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.student.test.tabs.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.student.test.tabs.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.test.StartTestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.test.StartTestActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.test.leaderboard.LeaderBoardRankDisplayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.test.leaderboard.LeaderBoardRankDisplayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.o9pathshala.student.WebViewDisplayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="o9Paathshala"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfilePicTheme" >
+            <intent-filter>
+                <action android:name="com.o9pathshala.student.WebViewDisplayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

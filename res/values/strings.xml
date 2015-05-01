@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">o9Paathshala</string>
+
+    <string-array name="nav_drawer_items">
+        <item>APPLICATION</item>
+        <item>Home</item>
+        <item>Discussion Fourm</item>
+        <item>Leader Board</item>
+        <item>Settings</item>
+        <item>Logout</item>
+        <item>GENERAL</item>
+        <item>Rate Us</item>
+        <item>Share</item>
+        <item>About</item>
+        <item>More Apps</item>
+        <item>Quit</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@null</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/discussion</item>
+        <item>@drawable/leaderboard</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/logout</item>
+        <item>@null</item>
+        <item>@drawable/ic_rateus</item>
+        <item>@drawable/ic_share</item>
+        <item>@drawable/ic_about</item>
+        <item>@drawable/ic_moreapps</item>
+        <item>@drawable/ic_quit</item>
+    </array>
+
+    <string name="tests"><b>All Tests</b></string>
+
+</resources>

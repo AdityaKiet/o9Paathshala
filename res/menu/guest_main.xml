@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_rate"
+        android:icon="@drawable/action_bar_rate_icon"
+        android:showAsAction="always"
+        android:title="Rate Us">@style/ActionButtonStyle</item>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/action_bar_share"
+        android:showAsAction="always"
+        android:title="Share"/>
+
+</menu>

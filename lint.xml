@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/o9pathshala/guest/test/ListAdpater.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/o9pathshala/guest/test/MainActivity.java" />
+    </issue>
+</lint>
